@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: normal;
+  padding-bottom: 200px;
+}
+
+header {
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: white;
+  padding: 20px 5% 140px 5%;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 140px;
+  justify-content: space-around;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 5%;
+}
+.logo-container {
+  display: inline-block;
+  padding: 0;
+  flex-basis: 40%;
+}
+.logo {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.nav-menu i {
+  display: none;
+}
+.nav-menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  margin-left: 10px;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s all linear;
+}
+.nav-link:hover {
+  color: rgb(214, 157, 0);
+}
+.nav-link:active {
+  color: rgb(209, 209, 209);
+}
+
+.headerInfo {
+  flex-basis: 70%;
+}
+.headerInfo span {
+  font-size: 20px;
+  letter-spacing: 0.3rem;
+  color: rgb(214, 157, 0);
+}
+.headerInfo span::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: rgb(214, 157, 0);
+  transform: translateY(-200%);
+  margin-right: 10px;
+}
+.headerInfo h1 {
+  margin: 20px 0 0 0;
+  font-weight: normal;
+  font-size: 42px;
+}
+.headerInfo h2 {
+  font-size: 38px;
+  font-weight: normal;
+  margin: 0 0 20px;
+}
+.headerInfo p {
+  font-size: 18px;
+}
+.headerInfo a {
+  padding: 10px 15px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.2s all linear;
+}
+.headerInfo a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+.about {
+  margin: 70px 0;
+  box-sizing: border-box;
+  padding: 50px 10%;
+}
+main h2 {
+  text-align: center;
+}
+main h2::after {
+  content: "";
+  background-color: rgb(214, 157, 0);
+  display: block;
+  height: 2px;
+  width: 150px;
+  margin: 20px 0 50px 50%;
+  transform: translateX(-75px);
+}
+.abouthead {
+  font-size: 22px;
+  padding-top: 20px;
+}
+.aboutme {
+  padding-top: 20px;
+}
+a,
+a:hover {
+  color: rgb(214, 157, 0);
+}
+.skillset span {
+  background-color: #eee;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.skillset span:last-child {
+  margin-left: 0;
+}
+.projectsPar {
+  background-color: rgb(243, 243, 243);
+  padding: 50px 10%;
+}
+.projects {
+  justify-content: space-between;
+}
+.projects > div {
+  background-color: white;
+  padding: 50px;
+  box-shadow: 2px 2px 4px #eee, -2px -2px 4px #eee;
+}
+.project img {
+  width: 100%;
+  height: auto;
+}
+.project h4 {
+  margin: 20px 0;
+}
+.project > a {
+  border: 1px solid rgb(214, 157, 0);
+  padding: 10px 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 48%;
+  text-align: center;
+}
+.project > a:hover {
+  background-color: rgb(243, 243, 243);
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+}
+.live {
+  margin-left: 2%;
+}
+
+@media (max-width: 644px) {
+  .headerInfo h1 {
+    font-size: 34px;
+  }
+  .headerInfo h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .headerInfo {
+    flex-basis: 90%;
+  }
+  .headerInfo h1 {
+    font-size: 32px;
+  }
+  .headerInfo h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 413px) {
+  .headerInfo h1 {
+    font-size: 29px;
+  }
+  .headerInfo h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 545px) {
+  .nav-menu ul {
+    display: none;
+  }
+  .nav-menu > i {
+    display: initial;
+  }
+}
+@media (max-width: 1100px) {
+  .nav-menu ul li {
+    margin-left: 0;
+    padding: 2px;
+  }
+}
