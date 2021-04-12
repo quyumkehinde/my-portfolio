@@ -38,9 +38,6 @@ header {
   padding: 10px;
 }
 
-.nav-menu i {
-  display: none;
-}
 .nav-menu ul li {
   list-style: none;
   display: inline-block;
@@ -62,6 +59,17 @@ header {
 }
 .nav-link:active {
   color: rgb(209, 209, 209);
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobile-menu > div {
+  flex-basis: 2px;
+  width: 20px;
+  background-color: white;
+  margin: 2px 0;
 }
 
 .headerInfo {
@@ -111,7 +119,7 @@ header {
 .about {
   margin: 70px 0;
   box-sizing: border-box;
-  padding: 50px 10%;
+  padding: 70px 10%;
 }
 main h2 {
   text-align: center;
@@ -129,6 +137,7 @@ main h2::after {
   font-size: 22px;
   padding-top: 20px;
 }
+
 .aboutme {
   padding-top: 20px;
 }
@@ -150,12 +159,20 @@ a:hover {
   background-color: rgb(243, 243, 243);
   padding: 50px 10%;
 }
+.projectsPar h2::after {
+  width: 126px;
+  transform: translateX(-63px);
+}
 .projects {
+  display: flex;
   justify-content: space-between;
 }
-.projects > div {
+.my-col {
+  flex-basis: 45%;
+}
+.project {
   background-color: white;
-  padding: 50px;
+  padding: 30px;
   box-shadow: 2px 2px 4px #eee, -2px -2px 4px #eee;
 }
 .project img {
@@ -215,13 +232,23 @@ a:hover {
   .nav-menu ul {
     display: none;
   }
-  .nav-menu > i {
-    display: initial;
+  .mobile-menu {
+    display: flex;
   }
 }
 @media (max-width: 1100px) {
   .nav-menu ul li {
     margin-left: 0;
     padding: 2px;
+  }
+}
+@media (max-width: 1023px) {
+  .my-col {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .abouthead:nth-child(2) {
+    margin-top: 20px;
   }
 }
