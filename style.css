@@ -11,8 +11,9 @@ header {
   background-repeat: no-repeat;
   width: 100%;
   color: white;
-  padding: 20px 5% 140px 5%;
+  padding: 20px 5% 140px 0;
   box-sizing: border-box;
+  position: relative;
 }
 .header {
   display: flex;
@@ -20,11 +21,12 @@ header {
   height: 100%;
   margin-top: 140px;
   justify-content: space-around;
+  padding-left: 5%;
 }
 .nav-menu {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 0 5%;
+  padding-left: 5%;
 }
 .logo-container {
   display: inline-block;
@@ -36,6 +38,7 @@ header {
   color: white;
   border: 1px solid white;
   padding: 10px;
+  z-index: 6;
 }
 
 .nav-menu ul li {
@@ -60,16 +63,43 @@ header {
 .nav-link:active {
   color: rgb(209, 209, 209);
 }
-.mobile-menu {
+.mobile-toggle {
   display: none;
   flex-direction: column;
   justify-content: center;
+  z-index: 6;
 }
-.mobile-menu > div {
+
+.mobile-menu {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden !important;
+  height: 100%;
+  padding-left: 5%;
+  top: 0;
+  z-index: 5;
+}
+.mobile-menu li {
+  list-style: none;
+}
+.mobile-menu li:nth-child(1) {
+  margin-top: 100px;
+}
+.mobile-menu li a {
+  color: white;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  border-bottom: 1px solid rgb(59, 59, 59);
+  display: block;
+}
+
+.mobile-toggle > div {
   flex-basis: 2px;
-  width: 20px;
+  width: 25px;
   background-color: white;
-  margin: 2px 0;
+  margin: 3px 0;
+  transition: 0.2s all linear;
 }
 
 .headerInfo {
@@ -232,7 +262,7 @@ a:hover {
   .nav-menu ul {
     display: none;
   }
-  .mobile-menu {
+  .mobile-toggle {
     display: flex;
   }
 }
