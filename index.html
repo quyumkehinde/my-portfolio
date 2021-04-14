@@ -12,26 +12,8 @@
     <script src="https://kit.fontawesome.com/0d8e5e6c23.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script>
-        const toggle = () => {
-            var menuNode = document.querySelector(".mobile-menu");
-            if(menuNode.style.display == "none"){
-                menuNode.style.display = "block";
-                document.querySelector(".mobile-toggle:hover div:nth-child(1)").style.transform = "rotate(-45deg)";
-                document.querySelector(".mobile-toggle:hover div:nth-child(3)").style.transform = "rotate(45deg)";
-                document.querySelector(".mobile-toggle:hover div:nth-child(3)").style.margin = "-1px 0 0 0";
-                document.querySelector(".mobile-toggle:hover div:nth-child(1)").style.margin = "0 0 -1px 0";
-                document.querySelector(".mobile-toggle:hover div:nth-child(2)").style.display = "none";
-            } else if (menuNode.style.display == "block") {
-                document.querySelector(".mobile-toggle:hover div:nth-child(1)").style.transform = "rotate(0)";
-                document.querySelector(".mobile-toggle:hover div:nth-child(3)").style.transform = "rotate(0)";
-                document.querySelector(".mobile-toggle:hover div:nth-child(3)").style.margin = "3px 0";
-                document.querySelector(".mobile-toggle:hover div:nth-child(1)").style.margin = "3px 0";
-                document.querySelector(".mobile-toggle:hover div:nth-child(2)").style.display = "block";
-                menuNode.style.display = "none";
-            }
-            
-        }
+    <script src="app.js">
+        
     </script>
     <header>
         <nav class="nav-menu">
@@ -91,6 +73,8 @@
                         <span>CSS</span>
                         <span>Javascript</span>
                         <span>React</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
                         <span>Git</span>
                     </div>
                 </div>
@@ -108,9 +92,43 @@
                     <a href="" class="git" target="_blank">Github <i class="fa fa-external-link"></i></a>
                     <a href="" class="live" target="_blank">Live Site <i class="fa fa-external-link"></i></a>
                 </div>
+                <div class="my-col project">
+                    <img src="images/portfolio-1.png" alt="Remote SEO Jobs">
+                    <h4>RemoteSEOJobs</h4>
+                    <p>RemoteSEOJobs is a free and open-source SEO remote jobs board which I co-founded alongside <a
+                            href="https://ng.linkedin.com/in/ayoola-olugbenga-daniel">Ayoola Daniel</a>.<br><br>
+                        The main Idea behind the project was to develop something to help talented SEOs easily get access to jobs that
+                        suits their area of specialty.
+                    </p><br>
+                    <a href="" class="git" target="_blank">Github <i class="fa fa-external-link"></i></a>
+                    <a href="" class="live" target="_blank">Live Site <i class="fa fa-external-link"></i></a>
+                </div>
                 <div class="my-col"></div>
             </div>
         </section>
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <div class="contacts">
+                <div class="contactForm contact-col">
+                    <form>
+                        <input type="text" placeholder="Enter your name">
+                        <input type="email" placeholder="Enter your email address">
+                        <textarea placeholder="Your message" cols="50" rows="5" ></textarea>
+                    </form>
+                </div>
+                <div class="contactDetails contact-col">
+                    <h5>Phone Number</h4>
+                    <p></i>+2348135697908</p>
+                    <h5>Email Address</h4>
+                    <p>Quyumkehinde@gmail.com</p>
+                    <h5>Address</h4>
+                    <p><i class="fa fa-location"></i> Abeokuta, Ogun State, Nigeria</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <span>Made with <i class="fa fa-heart" aria-hidden="true"></i> by me</span>
+    </footer>
 </body>
 </html>
