@@ -39,6 +39,10 @@ header {
   padding: 10px;
   z-index: 6;
 }
+.logo:hover {
+  color: white;
+  text-decoration: none;
+}
 
 .nav-menu ul li {
   list-style: none;
@@ -100,6 +104,11 @@ header {
   margin: 3px 0;
   transition: 0.2s all linear;
 }
+.mobile-menu .socialLinks {
+  position: absolute;
+  bottom: 5px;
+  left: 5%;
+}
 
 .headerInfo {
   flex-basis: 70%;
@@ -121,10 +130,10 @@ header {
 .headerInfo h1 {
   margin: 20px 0 0 0;
   font-weight: normal;
-  font-size: 42px;
+  font-size: 45px;
 }
 .headerInfo h2 {
-  font-size: 38px;
+  font-size: 39px;
   font-weight: normal;
   margin: 0 0 20px;
 }
@@ -205,6 +214,7 @@ a:hover {
   background-color: white;
   padding: 30px;
   box-shadow: 2px 2px 4px #eee, -2px -2px 4px #eee;
+  margin-top: 20px;
 }
 .project img {
   width: 100%;
@@ -232,7 +242,7 @@ a:hover {
 }
 .contact {
   padding: 50px 10% 50px 10%;
-  background-color: black;
+  background-color: rgb(3, 3, 3);
   color: white;
 }
 .contact h2::after {
@@ -245,16 +255,16 @@ a:hover {
 }
 .contactForm {
   flex-basis: 50%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .contactDetails {
   flex-basis: 40%;
 }
 .contactDetails p {
-  color: rgb(99, 99, 99);
+  color: rgb(87, 87, 87);
 }
 .contactDetails h5 {
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 20px;
   color: rgb(209, 209, 209);
 }
@@ -265,10 +275,33 @@ a:hover {
   box-sizing: border-box;
   padding: 10px 0;
   border: 0;
-  border-bottom: 1px solid rgb(59, 59, 59);
-  background-color: black;
+  border-bottom: 1px solid rgb(87, 87, 87);
+  background-color: rgb(3, 3, 3);
   color: white;
   margin-bottom: 30px;
+}
+.contactForm textarea {
+  resize: none;
+}
+.socialLinks {
+  margin-top: 10px;
+}
+.socialLinks a {
+  color: rgb(214, 157, 0);
+  font-size: 25px;
+  margin-left: 20px;
+}
+.socialLinks a:first-child {
+  margin-left: 0;
+}
+.formBtn {
+  background-color: rgb(214, 157, 0);
+  color: white;
+  border: 1px solid rgb(214, 157, 0);
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 15px 10px;
 }
 
 footer {
@@ -281,7 +314,7 @@ footer span i {
   color: red;
 }
 
-@media (max-width: 644px) {
+@media (max-width: 690px) {
   .headerInfo h1 {
     font-size: 34px;
   }
@@ -327,6 +360,7 @@ footer span i {
 @media (max-width: 1023px) {
   .my-col {
     flex-basis: 100%;
+    margin-top: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -338,6 +372,10 @@ footer span i {
   .contactForm,
   .contactDetails {
     flex-basis: 100%;
+
     display: block;
+  }
+  .contactDetails {
+    margin-top: 20px;
   }
 }
