@@ -3,6 +3,9 @@ body {
   font-family: "Poppins";
   font-weight: normal;
 }
+a {
+  cursor: pointer;
+}
 
 header {
   background-image: url(images/hero.jpg);
@@ -79,7 +82,7 @@ header {
   width: 100%;
   overflow-x: hidden !important;
   height: 100%;
-  padding-left: 5%;
+  padding: 0 5%;
   top: 0;
   z-index: 5;
 }
@@ -95,6 +98,7 @@ header {
   width: 100%;
   border-bottom: 1px solid rgb(59, 59, 59);
   display: block;
+  font-size: 16px;
 }
 
 .mobile-toggle > div {
@@ -150,7 +154,7 @@ header {
   transition: 0.2s all linear;
 }
 .headerInfo a:hover {
-  color: black;
+  color: black !important;
   background-color: white;
   border: 1px solid white;
 }
@@ -376,6 +380,6 @@ footer span i {
     display: block;
   }
   .contactDetails {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
