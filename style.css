@@ -8,7 +8,7 @@ a {
 }
 
 header {
-  background-image: url(images/hero.jpg);
+  background-image: url('images/hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -184,11 +184,8 @@ main h2::after {
   padding-top: 20px;
 }
 a,
-a:hover,
-.btnPrimary {
+a:hover {
   color: rgb(214, 157, 0);
-  background-color: initial;
-  border: 0;
 }
 .skillset span {
   background-color: #eee;
