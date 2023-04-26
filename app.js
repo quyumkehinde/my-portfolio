@@ -17,4 +17,7 @@ const toggle = () => {
             }
             
         }
-    
+
+const submitContactForm = () => {
+    window.location.href = `mailto:quyumkehinde@gmail.com?subject=Website Contact Form&body=${document.getElementById('form_message')?.value}`
+}
